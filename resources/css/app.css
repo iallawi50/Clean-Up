@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-primary-button, .btn-primary {
+        @apply p-2 rounded-md text-white transition bg-blue-500 hover:bg-blue-600 focus:bg-blue-700
+    }
+     .btn-danger {
+        @apply p-2 rounded-md text-white transition bg-red-500 hover:bg-red-600 focus:bg-red-700
+    }
+     .btn-success {
+        @apply p-2 rounded-md text-white transition bg-green-500 hover:bg-green-600 focus:bg-green-700
+    }
+     .btn-seccondray {
+        @apply p-2 rounded-md text-white transition bg-gray-500 hover:bg-gray-600 focus:bg-gray-700
+    }
+     .btn-warning {
+        @apply p-2 rounded-md text-white transition bg-orange-500 hover:bg-orange-600 focus:bg-orange-700
+    }
+    .container {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+    }
+}
+
+body {
+    font-family: 'Alexandria', sans-serif !important;
+
+}
+input {
+    @apply text-right
+}
+
+.frame-ad {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.frame-ad img {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.frame-ad-show {
+
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 767px) {
+    .frame-ad-show {
+
+    width: 100%;
+
+}
+}
+.frame-ad-show img {
+    margin: auto;
+    width: 100%;
+    /* height: 100%; */
+}
